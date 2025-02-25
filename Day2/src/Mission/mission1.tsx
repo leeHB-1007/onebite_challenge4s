@@ -1,4 +1,4 @@
-export default function mission1() {
+export default function Mission1() {
   return (
     <div>
       <pre>
@@ -10,15 +10,12 @@ export default function mission1() {
 
 type Nums = number[];
 type Colors = string[];
-type Coords = [number,number];
-type Info = [string ,number];
+type Coords = [number, number];
+type Info = [string, number];
 
 /**
- * [ 정답 체크 ]
- * 여기부터는 정답을 체크하기 위한 용도로 직접 수정하실 필요 없습니다.
- * 아래의 코드에 오류가 사라지면 정답, 오류가 있으면 오답입니다!
+ * [Test] 여기부터는 정답을 체크하기 위한 용도로 수정하지 않습니다
  */
-
 import { Equal, Expect, NotAny } from "@type-challenges/utils";
 
 const numbers: Nums = [1, 2, 3, 4, 5];
