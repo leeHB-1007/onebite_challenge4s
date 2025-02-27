@@ -10,9 +10,12 @@ function App() {
       <Link to="/mission2">mission 2</Link>
       <br />
       <Link to="/mission3">mission 3</Link>
-
+    <br>
+ 
+    </br>
 
       <br />
+      
     </>
   );
 }
