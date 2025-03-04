@@ -1,9 +1,40 @@
+import Spline from "@splinetool/react-spline";
+
 export default function Mission1() {
-  return (
-    <div className="code-container">
-      <h1>day 12 : section 9</h1>
-      <section>
-        <h2>9-1 : 타입 조작하기</h2>
+    return (
+      <div className="code-container" style={{ 
+        position: "relative", 
+        minHeight: "100vh",
+        overflow: "hidden",
+        color: "black"
+      }}>
+        {/* 3D 배경 레이어 */}
+        <div style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: 0
+        }}>
+          <Spline 
+            scene="https://prod.spline.design/CRizoLZXOC9uSzvE/scene.splinecode"
+            style={{ width: '100%', height: '100%' }}
+          />
+        </div>
+  
+        {/* 컨텐츠 레이어 */}
+        <div style={{
+          position: "relative",
+          zIndex: 1,
+          padding: "2rem",
+          margin: "20px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+        }}>
+          <h1>day 12 : section 9</h1>
+          <section>
+          <h2>9-1 : 타입 조작하기</h2>
         <p>4가지의 타입 조작 기법.</p>
         <ul>
           <li>
@@ -31,7 +62,8 @@ export default function Mission1() {
             </p>
           </li>
         </ul>
-      </section>
-    </div>
-  );
-}
+          </section>
+        </div>
+      </div>
+    );
+  }
